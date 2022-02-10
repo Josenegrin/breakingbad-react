@@ -1,0 +1,32 @@
+.character_container{
+
+}
+
+.character_details {
+
+}
+
+.character_details ul {
+  list-style: none;
+}
+
+.character_phrase {
+  display: grid;
+
+}
+
+@media (min-width:480px) {
+}
+
+@media (min-width:600px) { 
+}
+
+@media (min-width:801px) { 
+}
+
+@media (min-width:1025px) {
+  
+}
+
+@media (min-width:1281px) { 
+}

@@ -1,0 +1,14 @@
+.layout_header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 40px;
+  align-items: center;
+  grid-area: navbar;
+}
+
+.layout_header a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+}

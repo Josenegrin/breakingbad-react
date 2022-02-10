@@ -1,0 +1,8 @@
+.layout_footer{
+  height: 80px;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight:600;
+  grid-area: footer;
+}

@@ -1,0 +1,50 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "eqeqeq": "error",
+    "semi": ["off", "never"],
+    "indent": ["warn", 2],
+    "arrow-body-style": ["error", "always"],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/self-closing-comp": ["error", { "component": true, "html": true }],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "object-curly-newline": ["error", {
+      "ObjectExpression": "always",
+      "ObjectPattern": { "multiline": true },
+      "ImportDeclaration": "never",
+      "ExportDeclaration": { "multiline": true, "minProperties": 3 }
+  }],
+  "comma-dangle": ["error", {
+    "arrays": "never",
+    "objects": "only-multiline",
+    "imports": "never",
+    "exports": "never",
+    "functions": "never"
+}],
+"jsx-a11y/label-has-for": [ "error", {
+  "required": {
+    "some": [ "nesting", "id"  ]
+  }
+}]
+  }
+}
