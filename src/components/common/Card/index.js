@@ -1,11 +1,12 @@
-// import styles from './CardsContainer.module.css'
-// import Card from './Card'
-// const CardsContainer = ({children}) => {
-//   return (
-//     <div className={styles.cardsContainer_container}>
-//       <Card image={image} name={name} nickname={nickname}/>
-//     </div>
-//     )
-// }
+import PropTypes from 'prop-types'
+import styles from './CardsContainer.module.css'
 
-// export default CardsContainer
+const CardsContainer = ({ children }) => {
+  return <div className={styles.cardsContainer_container}>{children}</div>
+}
+
+export default CardsContainer
+
+CardsContainer.propTypes = {
+  children: PropTypes.element.isRequired,
+}

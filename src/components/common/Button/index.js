@@ -1,11 +1,16 @@
+import PropTypes from 'prop-types'
 import styles from './Button.module.css'
 
-const index = () => {
+const Button = ({ message }) => {
   return (
     <button type="button" className={styles.button}>
-      <span>Button</span>
+      <span className={styles.button__body}>{message}</span>
     </button>
   )
 }
 
-export default index
+export default Button
+
+Button.propTypes = {
+  message: PropTypes.string.isRequired,
+}

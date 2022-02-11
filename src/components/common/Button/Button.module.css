@@ -17,13 +17,13 @@
   color: ghostwhite;
  }
  
- .button span {
+ .button .button__body {
   position: relative;
   z-index: 10;
   transition: color 0.4s;
  }
  
- .button:hover span {
+ .button:hover .button__body {
   color: black;
  }
  
