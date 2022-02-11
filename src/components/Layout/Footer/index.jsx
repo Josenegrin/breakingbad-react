@@ -1,6 +1,6 @@
 import styles from './Footer.module.css'
 
-const index = () => {
+const Footer = () => {
   return (
     <footer className={styles.layout_footer}>
       <span>Designed by Jose Negrin</span>
@@ -8,4 +8,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Footer

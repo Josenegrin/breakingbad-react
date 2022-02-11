@@ -1,0 +1,9 @@
+.homePage {
+  display: grid;
+  place-items: center;
+}
+
+.homePage_title {
+  color: white;
+  margin-bottom: 50px;
+}

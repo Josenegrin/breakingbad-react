@@ -12,5 +12,8 @@ const Button = ({ message }) => {
 export default Button
 
 Button.propTypes = {
-  message: PropTypes.string.isRequired,
+  message: PropTypes.string,
+}
+Button.defaultProps = {
+  message: 'Nueva Frase',
 }
