@@ -1,0 +1,43 @@
+.card_container {
+  width: 200px;
+  height: 350px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 1px 5px 60px 0px #100a886b;
+  cursor: pointer;
+}
+ .card_container__link{
+  text-decoration: none;
+ }
+ .card_name {
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 17px;
+ }
+ 
+ .card_nickname {
+  font-weight: 400;
+  color: black;
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 12px;
+ }
+ 
+ .card__figure {
+   position:relative;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 250px;
+  width: 200px;
+ }
+ 
+ .card__image{
+   position:absolute;
+   top:0;
+  width: 100%;
+  object-fit: cover;
+ }
