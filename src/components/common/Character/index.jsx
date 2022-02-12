@@ -6,7 +6,6 @@ import styles from './Character.module.css'
 import { characters, randomQuote } from '../../../bd'
 
 const Character = () => {
-  console.log(randomQuote)
   const character = characters[0]
   const {
     char_id: id,

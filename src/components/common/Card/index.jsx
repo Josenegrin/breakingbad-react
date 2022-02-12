@@ -1,12 +1,9 @@
 // import PropTypes from 'prop-types'
-import { characters, randomQuote } from '../../../bd'
+import { characters } from '../../../bd'
 import Card from './Card'
 import styles from './CardsContainer.module.css'
 
 const CardsContainer = () => {
-  console.log(characters)
-  console.log(randomQuote)
-
   return (
     <div className={styles.cardsContainer_container}>
       {characters &&

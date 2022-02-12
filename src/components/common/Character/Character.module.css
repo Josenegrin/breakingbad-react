@@ -55,10 +55,6 @@
 .character_details__list .list__item{
   margin-left: 10px;
 }
-.character_phrase {
-  display: grid;
-
-}
 
 .character_phrase{
   margin: 50px 0;
@@ -67,6 +63,8 @@
 }
 .character_phrase__header{
   padding-bottom:50px;
+  width: 80%;
+  text-align: center;
 }
 @media (min-width:480px) {
   .character_image_container{
