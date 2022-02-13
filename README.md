@@ -110,5 +110,22 @@ La aplicación fue construida con las herramientas y arquitectura de carpetas me
 La aplicacion fue construida con React, JavaScript y los estilos glibales con CSS y los estilos de los componentes con CSS Modules.
 
 Utilice CSS Modules porque no necesito instalar dependencias adicionales para su uso y me parece una manera nativa de usarlo.
+
 ¿Por quñe use CSS Modules y no CSS como de costumrbe?
-Porque cuando se construye la aplicación con CSS pueda ocurrir la "casualidad" de que se escriba un estilo en un componente con el mismo nombre, y este se replica en toda la aplicación, en cambio con CSS Modules la aplicación la crea 
+Porque cuando se construye la aplicación con CSS pueda ocurrir la "casualidad" de que se escriba un estilo en un componente con el mismo nombre, y este se replica en toda la aplicación, en cambio con CSS Modules react genera los estilos de manera dinamica y nunca se van a repetir los nombres aunque de "casualidad" utilicemos el mismo nombre ne los estilos.
+
+A su vez utilice Axios para realizar las peticiones porque me parece una libreria versatil y muy sencilla de utilizar, junto a axios use  async await y try catch.
+
+Para la gestión del Contexto Global utilice la Context Api de React, ya que viene incluida de forma nativa en el, así nos ahorramos instalar algún tipo de dependencia, y otro motivo es que al ser una aplicación sencilla y muy pequeñita no vi la necesidad de utilizar una herramienta mas robusta, ya que lo que necesitamos nos lo otorga esta herramienta.
+
+Utilice un custom hook que nos ayuda a guardar y consultar el local storage de nuestro navegador.
+
+¿Por que lo use? Para evitar hacer peticiones innecesarias, sencillamente carga la aplicación junto con los personajes, y se almacenan en el localStorage, para evitar que si recargamos la pagina vuelva a realizar la peticion, de esta manera solo hara la peticion 1 sola vez.
+
+Para la internacionalización de la aplicación utilice i18next y react-i18next, me parece que es una herramienta super sencilla para realizar las internacionalizaciones, solo debia crear una carpeta con las traducciones, los idiomas, y utilizar sus hooks para compartir las traducciones con la aplicación, y un hook en los componentes donde queria acceder a estas traducciones.
+
+Para los testings unitarios utilice react-testing-library ya que es la herramienta que mas nos recomienda react para realizar los testings unitarios, y teniendo en cuenta que al instalar react con npx se nos instala por defecto.
+
+Para las correcciones de codigo y tipos use eslint y prettier para formatear la identacion de codigo.
+
+
