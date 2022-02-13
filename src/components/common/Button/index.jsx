@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import PropTypes, { func, string } from 'prop-types'
 import styles from './Button.module.css'
 
 const Button = ({ onClick, children }) => {
@@ -13,9 +13,9 @@ export default Button
 
 Button.propTypes = {
   children: PropTypes.string,
-  onClick: PropTypes.bool,
+  onClick: PropTypes.func,
 }
 Button.defaultProps = {
-  children: 'Nueva Frase',
-  onClick: false,
+  children: string,
+  onClick: func,
 }
