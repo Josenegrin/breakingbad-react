@@ -6,7 +6,7 @@ const Card = ({ character }) => {
   const { char_id: id, img, name, nickname } = character
 
   return (
-    <div key={id} className={styles.card_container}>
+    <div data-testid="card" key={id} className={styles.card_container}>
       <Link className={styles.card_container__link} to={`/character/${id}`}>
         <div className={styles.card__figure}>
           <img className={styles.card__image} src={img} alt={`${name}`} />

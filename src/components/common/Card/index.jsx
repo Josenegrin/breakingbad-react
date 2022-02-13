@@ -6,7 +6,10 @@ const CardsContainer = () => {
   const { charactersDB: charactersList } = useApi()
 
   return (
-    <div className={styles.cardsContainer_container}>
+    <div
+      data-testid="cards-container"
+      className={styles.cardsContainer_container}
+    >
       {charactersList.length > 0 &&
         charactersList.map((character) => {
           const { char_id: id } = character
