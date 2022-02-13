@@ -1,5 +1,5 @@
-import CardsContainer from '../../components/common/Card'
 import styles from './HomePage.module.css'
+import CardsContainer from '../../components/common/Card'
 
 const HomePage = () => {
   return (

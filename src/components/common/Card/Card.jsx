@@ -2,7 +2,9 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import styles from './Card.module.css'
 
-const Card = ({ id, img, name, nickname }) => {
+const Card = ({ character }) => {
+  const { char_id: id, img, name, nickname } = character
+
   return (
     <div key={id} className={styles.card_container}>
       <Link className={styles.card_container__link} to={`/character/${id}`}>
@@ -19,8 +21,19 @@ const Card = ({ id, img, name, nickname }) => {
 export default Card
 
 Card.propTypes = {
-  id: PropTypes.number.isRequired,
-  img: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  nickname: PropTypes.string.isRequired,
+  character: PropTypes.shape({
+    char_id: PropTypes.number,
+    img: PropTypes.string,
+    name: PropTypes.string,
+    nickname: PropTypes.string,
+  }),
+}
+
+Card.defaultProps = {
+  character: PropTypes.shape({
+    car_id: 1,
+    img: '',
+    name: '',
+    nickname: '',
+  }),
 }

@@ -1,15 +1,18 @@
-import './styles/globalStyles.css'
 import { BrowserRouter } from 'react-router-dom'
-import Rutas from './routes'
+import './styles/globalStyles.css'
+import Routes from './routes'
 import Layout from './components/Layout'
+import { ApiWrapper } from './context/apiContext'
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Layout>
-        <Rutas />
-      </Layout>
-    </BrowserRouter>
+    <ApiWrapper>
+      <BrowserRouter>
+        <Layout>
+          <Routes />
+        </Layout>
+      </BrowserRouter>
+    </ApiWrapper>
   )
 }
 

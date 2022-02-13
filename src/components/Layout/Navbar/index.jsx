@@ -1,7 +1,3 @@
-/* eslint-disable react/jsx-curly-newline */
-/* eslint-disable no-confusing-arrow */
-/* eslint-disable implicit-arrow-linebreak */
-/* eslint-disable arrow-body-style */
 import { NavLink } from 'react-router-dom'
 import styles from './Navbar.module.css'
 
