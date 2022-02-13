@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Aplicación de Breaking Bad
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicación de Breaking Bad, la cual muestra en la home page todos los personajes de breaking bad, y donde puedes cambiar el lenguaje de la aplicación.
 
-## Available Scripts
+Al hacer click en la tarjeta de los personajes puedes entrar y ver la descripción de cada uno de ellos.
 
-In the project directory, you can run:
+## Comenzando 🚀
 
-### `npm start`
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Mira **Deployment** para conocer como desplegar el proyecto.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Pre-requisitos 📋
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tener Node instalado en el ordenador y instalar los paquetes de node para poder correrlo en local.
 
-### `npm run build`
+### Instalación 🔧
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Puedes instalar el proyecto hagiendo un git clone del repositorio y instalando los paquetes de node.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm i
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tests Unitarios ⚙️
 
-### `npm run eject`
+Para ejecutar las pruebas unitarias necesitas ejecutar el comando.
+```
+npm run tests
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Analice las pruebas end-to-end 🔩
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+_Explica que verifican estas pruebas y por qué_
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+Da un ejemplo
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Despliegue 📦
 
-## Learn More
+_Agrega notas adicionales sobre como hacer deploy_
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Construido con 🛠️
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+_Menciona las herramientas que utilizaste para crear tu proyecto_
 
-### Code Splitting
+* [React](https://reactjs.org/) - Libreria ReactJs desarrollada por Facebook.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* [https://www.i18next.com/](https://www.i18next.com/) - Framework de internacionalización muy sencillo de configurar que nos aporta hooks para realizar las traducciones de manera muy rápida.
 
-### Analyzing the Bundle Size
+* [axios](https://axios-http.com/) - Cliente HTTP basado en promesas, muy ligero y versátil al momento de realizar las peticiones.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* [react-router-dom](https://reactrouter.com/docs/en/v6) - Librería para realizar el enrutado y navegación entre componentes, posee una communidad muy grande y nos ayuda a realizar el enrutado de manera sencilla, adicionalmente posee hooks muy fáciles de usar.
 
-### Making a Progressive Web App
+* [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - Herramienta para realizar los unit testings, que adicionalmente de ser liviana proporciona de muy buenas herramientas para realizar testingd en el front-end.
+* [PropTypes](https://github.com/facebook/prop-types) - Nos ayuda a comprobar los props que se le pasan a los componentes para mantener las buenas practicas de desarrollo.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* [ESLint](https://eslint.org/) - Libreria que nos ayuda a revisar y corregir los typos y errores en el código.
 
-### Advanced Configuration
+* [Prettier](https://eslint.org/) - Nos ayuda a identar el código de manera legible.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Autor ✒️
 
-### Deployment
+Jose Negrin
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* **Jose Negrin** - *Desarrollador Front End* - [Josenegrin](https://github.com/Josenegrin)
 
-### `npm run build` fails to minify
+## Arquitectura de la aplicación 🏛
+La aplicación tiene la siguiente estructora de carpetas:
+Iniciando con 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [Root] - Esta compuesto por la carpeta Public, src, y archivos como -env, .eslintrc.json, .gitignore, .prettierrc, jest.config.js, jest.setup.js, package-lock.json, package.json, README.md
+
+* [Public] - Esta compuesto por el favicon, el index.html, logos. manifest y robots.txt
+
+* [src] - Este archivo esta compuesto por distontos folders para agrupar de manera más eficiente el código, en el inicio de este folders tenemos los archivos reportWebVitals, App.jsx, y index.jsx,
+
+* * Folders de la carpeta [src]
+* * [assets] - folder donde se almacenan logos que se van a utilizar en la aplicación.
+* * [components] - folder donde se guardan los componentes, este folder esta compuesto por [common] y [layout]
+* * * [common] - lo conforman los componentes comunes de la aplicación, donde por cada componente existe una carbeta donde esta el componente junto a su archivo de css.modules
+* * * [layout] - lo conforman los componentes que forman parte del layout, como el header, footer, navbar, e incluso el toggle para realizar el cambio de idiomas que forma parte del header de la aplicacion, cada uno de estos componentes cuenta con una carpeta donde dentro esta el archivo de css. Y en el inicio de esta carpeta se encuentra el index.jsx que es el index del layout y su archivo de css.modules
+
+* * [context] - Esta es la carpeta donde se almacena el archivo apiContext que es el archivo que gestiona todo el estado global de la aplicación, donde se realizan las llamadas a la Api y se alimentan a los componentes.
+
+* * [hooks] - los custom hooks se almacenan en esta carpeta, en la cual existe un hook que nos ayuda a guardar y acceder a datos del local storage.
+
+* * [routes] - folder donde se guarda el archivo index.js donde estan definidas las rutas de la aplicación.
+
+* * [styles] - carpeta donde se guardan los estilos globales de la aplicación, donde se formatea todos los estilos de la aplicación.
+
+* * [translations] - folder en el cual se guardan las traducciones de la aplicacion, esta consta de dos carpetas [en] y [es].
+
+* * * [en] - carpeta donde existe un archivo json el cual tiene las traducciones en inglés de la aplicación.
+
+* * * [es] - carpeta donde existe un archivo json el cual tiene las traducciones en castellano de la aplicación.
+
+* * [utils] - carpeta donde se guardan utilidades que pueden ser usadas en el resto de la aplicacion, en este caso tenemos las constantes de la aplicación donde estan las urls que se usan para las peticiones, y un archivo llamado spliAuthorName que nos ayuda a cambiar los espacios del author por un + para terminar de formar la query que vamos a usar para realizar la eptición.
+
+* * [views] -  en esta carpeta tenemos guardadas las vistas (paginas) de la aplicación.

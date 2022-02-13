@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import styles from './Character.module.css'
 import { useApi } from '../../../context/apiContext'
-import Phrase from '../phrase'
+import Phrase from '../Phrase'
 
 const Character = () => {
   const { t } = useTranslation('global')

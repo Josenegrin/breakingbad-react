@@ -16,7 +16,7 @@ const Toggle = () => {
   }
 
   return (
-    <div className={styles.switch_container}>
+    <div data-testid="toggle" className={styles.switch_container}>
       <label className={styles.switch}>
         <input onClick={(e) => handleLanguage(e)} type="checkbox" />
         <span className={styles.slider}></span>

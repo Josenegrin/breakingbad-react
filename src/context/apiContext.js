@@ -17,7 +17,7 @@ export const ApiWrapper = ({ children }) => {
   const [charactersDB, setCharactersDB] = useLocalStorage('characters', [])
 
   useEffect(() => {
-    if ((!isCharacters && !charactersDB) || charactersDB.lengt === 0) {
+    if (!isCharacters && charactersDB.length === 0) {
       const getCharactersRequest = async () => {
         try {
           const req = await axios(URL_CHARACTERS)

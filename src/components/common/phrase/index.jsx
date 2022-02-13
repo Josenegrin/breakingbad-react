@@ -8,7 +8,7 @@ const Phrase = () => {
   const { phrase, getNewPhrase } = useApi()
 
   return (
-    <div className={styles.phrase}>
+    <div data-testid="phrase" className={styles.phrase}>
       {phrase?.length > 0 &&
         phrase.map((quote) => {
           const { quote: message, quote_id: id } = quote

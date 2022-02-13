@@ -5,7 +5,7 @@ import styles from './Navbar.module.css'
 const Navbar = () => {
   const { t } = useTranslation('global')
   return (
-    <nav className={styles.main_nav}>
+    <nav data-testid="navbar" className={styles.main_nav}>
       <ul className={styles.main_nav__list}>
         <li className={styles.main_nav__item}>
           <NavLink
