@@ -2,7 +2,7 @@
   grid-area: header;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 40px;
+  padding: 20px;
   align-items: center;
 }
 
@@ -11,7 +11,7 @@
   color:white;
 }
 .headear_logo__image{
-  font-weight: 600;
+  height: 80px;;
 }
 
 @media (min-width:600px) { 

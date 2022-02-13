@@ -4,7 +4,7 @@
     "es2021": true,
     "jest": true
   },
-  "extends": ["plugin:react/recommended", "airbnb", "plugin:react/recommended"],
+  "extends": ["airbnb", "plugin:react/recommended"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -15,13 +15,14 @@
   "plugins": ["react"],
   "rules": {
     "eqeqeq": "error",
+    "react/jsx-no-constructed-context-values": "off",
     "semi": ["off", "never"],
     "indent": ["warn", 2],
-    "arrow-body-style": ["error", "always"],
+    "arrow-body-style": "off",
     "operator-linebreak": [2, "after", { "overrides": { "&&": "ignore"} }],
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/self-closing-comp": ["error", { "component": true, "html": true }],
+    "react/jsx-curly-newline": "off",
     "react/function-component-definition": [
       2,
       {
@@ -29,12 +30,7 @@
         "unnamedComponents": "arrow-function"
       }
     ],
-    "object-curly-newline": ["error", {
-      "ObjectExpression": "always",
-      "ObjectPattern": { "multiline": true },
-      "ImportDeclaration": "never",
-      "ExportDeclaration": { "multiline": true, "minProperties": 3 }
-  }],
+    "object-curly-newline": "off",
   "no-template-curly-in-string": "error",
   "comma-dangle": ["error", {
     "arrays": "never",
@@ -47,6 +43,14 @@
   "required": {
     "some": [ "nesting", "id"  ]
   }
-}]
+}],
+"react/self-closing-comp": "off",
+"react/jsx-one-expression-per-line": "off",
+"import/prefer-default-export": "off",
+"linebreak-style": "off",
+"allowRequiredDefaults": "off",
+"padded-blocks": "off",
+"no-confusing-arrow": "off",
+"implicit-arrow-linebreak": "off"
   }
 }
