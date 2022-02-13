@@ -1,0 +1,11 @@
+.phrase{
+  margin: 20px 0;
+  display: grid;
+  place-items: center;
+}
+.phrase__header{
+  padding-bottom:20px;
+  width: 80%;
+  min-height: 100px;
+  text-align: center;
+}

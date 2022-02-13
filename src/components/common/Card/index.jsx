@@ -3,8 +3,7 @@ import styles from './CardsContainer.module.css'
 import { useApi } from '../../../context/apiContext'
 
 const CardsContainer = () => {
-  const { characters } = useApi()
-  const charactersList = characters.charactersDB
+  const { charactersDB: charactersList } = useApi()
 
   return (
     <div className={styles.cardsContainer_container}>

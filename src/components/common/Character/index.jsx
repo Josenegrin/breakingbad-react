@@ -1,15 +1,19 @@
+import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import Button from '../Button'
 import styles from './Character.module.css'
-import { randomQuote } from '../../../bd'
 import { useApi } from '../../../context/apiContext'
+import Phrase from '../phrase'
 
 const Character = () => {
   const params = useParams()
-  const { characters } = useApi()
-  const characterList = characters.charactersDB
+  const {
+    charactersDB: charactersList,
+    setAuthorPhrase,
+    setIsPhrase,
+    authorPhrase,
+  } = useApi()
 
-  const characterSelected = characterList.find((character) => {
+  const characterSelected = charactersList.find((character) => {
     return Number(params.id) === character.char_id
   })
 
@@ -25,6 +29,13 @@ const Character = () => {
     portrayed,
     status,
   } = characterSelected
+
+  useEffect(() => {
+    if (!authorPhrase) {
+      setAuthorPhrase(name)
+      setIsPhrase(true)
+    }
+  }, [characterSelected, authorPhrase])
 
   return (
     <section key="key" className={styles.character}>
@@ -98,21 +109,9 @@ const Character = () => {
               </li>
             </ul>
           </div>
-          {randomQuote.length > 0 && (
-            <div className={styles.character_phrase}>
-              {randomQuote.map((quote) => {
-                return (
-                  <h2
-                    key={quote.quote_id}
-                    className={styles.character_phrase__header}
-                  >
-                    `&#34;{quote.quote}&#34;`
-                  </h2>
-                )
-              })}
-              <Button message="Nueva Frase" />
-            </div>
-          )}
+          <div className={styles.character_phrase}>
+            <Phrase />
+          </div>
         </>
       )}
     </section>
