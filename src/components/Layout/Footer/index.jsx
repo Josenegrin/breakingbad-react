@@ -1,9 +1,11 @@
+import { useTranslation } from 'react-i18next'
 import styles from './Footer.module.css'
 
 const Footer = () => {
+  const { t } = useTranslation('global')
   return (
     <footer className={styles.layout_footer}>
-      <span>Designed by Jose Negrin</span>
+      <span>{t('footer.title')}</span>
     </footer>
   )
 }

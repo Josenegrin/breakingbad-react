@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
 import styles from './Button.module.css'
 
-const Button = ({ onClick, message }) => {
+const Button = ({ onClick, children }) => {
   return (
     <button onClick={onClick} type="button" className={styles.button}>
-      <span className={styles.button__body}>{message}</span>
+      <span className={styles.button__body}>{children}</span>
     </button>
   )
 }
@@ -12,10 +12,10 @@ const Button = ({ onClick, message }) => {
 export default Button
 
 Button.propTypes = {
-  message: PropTypes.string,
+  children: PropTypes.string,
   onClick: PropTypes.bool,
 }
 Button.defaultProps = {
-  message: 'Nueva Frase',
+  children: 'Nueva Frase',
   onClick: false,
 }
