@@ -4,13 +4,6 @@ Aplicación de Breaking Bad, la cual muestra en la home page todos los personaje
 
 Al hacer click en la tarjeta de los personajes puedes entrar y ver la descripción de cada uno de ellos.
 
-## Comenzando 🚀
-
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
-
-
 ### Pre-requisitos 📋
 
 Tener Node instalado en el ordenador y instalar los paquetes de node para poder correrlo en local.
@@ -27,7 +20,7 @@ npm i
 
 Para ejecutar las pruebas unitarias necesitas ejecutar el comando.
 ```
-npm run tests
+npm run test
 ```
 
 ### Analice las pruebas end-to-end 🔩
