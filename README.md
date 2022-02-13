@@ -37,9 +37,13 @@ _Agrega notas adicionales sobre como hacer deploy_
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+Herramientas utilizadas para la creación del proyecto:
 
 * [React](https://reactjs.org/) - Libreria ReactJs desarrollada por Facebook.
+
+* [Context API](https://reactjs.org/docs/context.html) - Contexto que nos provee React de forma nativa para gestionar estados globales de la aplicación.
+
+* [CSS Modules](https://github.com/css-modules/css-modules) - Estilos de CSS construidos con CSS Modules.
 
 * [https://www.i18next.com/](https://www.i18next.com/) - Framework de internacionalización muy sencillo de configurar que nos aporta hooks para realizar las traducciones de manera muy rápida.
 
@@ -48,6 +52,7 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 * [react-router-dom](https://reactrouter.com/docs/en/v6) - Librería para realizar el enrutado y navegación entre componentes, posee una communidad muy grande y nos ayuda a realizar el enrutado de manera sencilla, adicionalmente posee hooks muy fáciles de usar.
 
 * [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - Herramienta para realizar los unit testings, que adicionalmente de ser liviana proporciona de muy buenas herramientas para realizar testingd en el front-end.
+
 * [PropTypes](https://github.com/facebook/prop-types) - Nos ayuda a comprobar los props que se le pasan a los componentes para mantener las buenas practicas de desarrollo.
 
 * [ESLint](https://eslint.org/) - Libreria que nos ayuda a revisar y corregir los typos y errores en el código.
@@ -71,9 +76,13 @@ Iniciando con
 * [src] - Este archivo esta compuesto por distontos folders para agrupar de manera más eficiente el código, en el inicio de este folders tenemos los archivos reportWebVitals, App.jsx, y index.jsx,
 
 * * Folders de la carpeta [src]
+
 * * [assets] - folder donde se almacenan logos que se van a utilizar en la aplicación.
+
 * * [components] - folder donde se guardan los componentes, este folder esta compuesto por [common] y [layout]
+
 * * * [common] - lo conforman los componentes comunes de la aplicación, donde por cada componente existe una carbeta donde esta el componente junto a su archivo de css.modules
+
 * * * [layout] - lo conforman los componentes que forman parte del layout, como el header, footer, navbar, e incluso el toggle para realizar el cambio de idiomas que forma parte del header de la aplicacion, cada uno de estos componentes cuenta con una carpeta donde dentro esta el archivo de css. Y en el inicio de esta carpeta se encuentra el index.jsx que es el index del layout y su archivo de css.modules
 
 * * [context] - Esta es la carpeta donde se almacena el archivo apiContext que es el archivo que gestiona todo el estado global de la aplicación, donde se realizan las llamadas a la Api y se alimentan a los componentes.
@@ -93,3 +102,13 @@ Iniciando con
 * * [utils] - carpeta donde se guardan utilidades que pueden ser usadas en el resto de la aplicacion, en este caso tenemos las constantes de la aplicación donde estan las urls que se usan para las peticiones, y un archivo llamado spliAuthorName que nos ayuda a cambiar los espacios del author por un + para terminar de formar la query que vamos a usar para realizar la eptición.
 
 * * [views] -  en esta carpeta tenemos guardadas las vistas (paginas) de la aplicación.
+
+## Explicación de la Aplicacion 🧑🏻‍💻
+
+La aplicación fue construida con las herramientas y arquitectura de carpetas mencionadas anteriormente, sin embargo daré una explicación un poco más detallada en esta seccion.
+
+La aplicacion fue construida con React, JavaScript y los estilos glibales con CSS y los estilos de los componentes con CSS Modules.
+
+Utilice CSS Modules porque no necesito instalar dependencias adicionales para su uso y me parece una manera nativa de usarlo.
+¿Por quñe use CSS Modules y no CSS como de costumrbe?
+Porque cuando se construye la aplicación con CSS pueda ocurrir la "casualidad" de que se escriba un estilo en un componente con el mismo nombre, y este se replica en toda la aplicación, en cambio con CSS Modules la aplicación la crea 
