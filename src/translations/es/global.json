@@ -1,0 +1,29 @@
+{
+  "header": {
+    "nav": {
+      "home": "Inicio"
+    }
+  },
+  "home-page": {
+    "title": "Aplicación de Breaking Bad"
+  },
+  "character-page": {
+    "title": "Personaje",
+    "details": {
+      "name": "Nombre",
+      "birthday": "Nacimiento",
+      "occupation": "Ocupación",
+      "status": "Estado",
+      "nickname": "Apodo",
+      "category": "Categoria",
+      "portrayed": "Retratado",
+      "appearances": "Apariciones"
+    },
+    "phrase": {
+      "button-text": "Ver otra cita"
+    }
+  },
+  "footer": {
+    "title": "Diseñado por Jose Negrin"
+  }
+}

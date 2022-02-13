@@ -1,8 +1,10 @@
+import { useTranslation } from 'react-i18next'
 import Button from '../Button'
 import styles from './Phrase.module.css'
 import { useApi } from '../../../context/apiContext'
 
 const Phrase = () => {
+  const { t } = useTranslation('global')
   const { phrase, getNewPhrase } = useApi()
 
   return (
@@ -16,7 +18,9 @@ const Phrase = () => {
             </h2>
           )
         })}
-      <Button onClick={getNewPhrase} message="Ver otra frase" />
+      <Button onClick={getNewPhrase}>
+        {t('character-page.phrase.button-text')}
+      </Button>
     </div>
   )
 }

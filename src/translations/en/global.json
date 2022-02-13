@@ -1,0 +1,29 @@
+{
+  "header": {
+    "nav": {
+      "home": "Home"
+    }
+  },
+  "home-page": {
+    "title": "Breaking Bad Application"
+  },
+  "character-page": {
+    "title": "Character",
+    "details": {
+      "name": "Name",
+      "birthday": "Birthday",
+      "occupation": "Occupation",
+      "status": "Status",
+      "nickname": "Nickname",
+      "category": "Category",
+      "portrayed": "Portrayed",
+      "appearances": "Appearances"
+    },
+    "phrase": {
+      "button-text": "See another quote"
+    }
+  },
+  "footer": {
+    "title": "Designed by Jose Negrin"
+  }
+}
