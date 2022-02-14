@@ -36,6 +36,9 @@ jest.mock('../../../../context/apiContext', () => {
             better_call_saul_appearance: [],
           },
         ],
+        isInfoApi: {
+          character: {},
+        },
       }
     }),
   }

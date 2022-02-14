@@ -31,7 +31,7 @@ Card.propTypes = {
 
 Card.defaultProps = {
   character: PropTypes.shape({
-    car_id: 1,
+    car_id: '',
     img: '',
     name: '',
     nickname: '',

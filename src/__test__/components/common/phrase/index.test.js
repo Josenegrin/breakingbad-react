@@ -26,6 +26,9 @@ jest.mock('../../../../context/apiContext', () => {
           },
         ],
         getNewPhrase: jest.fn(),
+        isInfoApi: {
+          phrase: {},
+        },
       }
     }),
   }
