@@ -25,7 +25,7 @@ const App = () => {
   return (
     <ApiWrapper>
       <I18nextProvider i18n={i18next}>
-        <BrowserRouter>
+        <BrowserRouter basename="breakingbad-react">
           <Layout>
             <Routes />
           </Layout>
