@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
-// import userEvent from '@testing-library/user-event'
 import CardsContainer from '../../../../components/common/Card'
 
 jest.mock('../../../../context/apiContext', () => {
@@ -36,6 +35,9 @@ jest.mock('../../../../context/apiContext', () => {
             better_call_saul_appearance: [],
           },
         ],
+        isInfoApi: {
+          character: {},
+        },
       }
     }),
   }
@@ -48,8 +50,10 @@ describe('<CardsContainer/>', () => {
         <CardsContainer />
       </BrowserRouter>
     )
+
   const { queryByTestId } = renderComponent()
   const cardsContainer = queryByTestId('cards-container')
+
   test('Waiting for it to show in the DOM', () => {
     expect(cardsContainer).toBeTruthy()
   })

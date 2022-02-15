@@ -1,4 +1,4 @@
-import PropTypes, { func, string } from 'prop-types'
+import PropTypes from 'prop-types'
 import styles from './Button.module.css'
 
 const Button = ({ onClick, children }) => {
@@ -21,6 +21,6 @@ Button.propTypes = {
   onClick: PropTypes.func,
 }
 Button.defaultProps = {
-  children: string,
-  onClick: func,
+  children: '',
+  onClick: PropTypes.func,
 }

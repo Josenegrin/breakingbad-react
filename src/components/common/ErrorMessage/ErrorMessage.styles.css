@@ -1,0 +1,11 @@
+.errorMessage{
+  display: grid;
+  place-items: center;
+}
+
+.errorMessage__header{
+  padding:20px;
+  width: 80%;
+  min-height: 100px;
+  text-align: center;
+}

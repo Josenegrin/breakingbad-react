@@ -7,7 +7,9 @@ const Layout = ({ children }) => {
   return (
     <div className={styles.layout_container}>
       <Header />
-      <main className={styles.layout_main_container}>{children}</main>
+      <main data-testid="main" className={styles.layout_main_container}>
+        {children}
+      </main>
       <Footer />
     </div>
   )
@@ -16,5 +18,9 @@ const Layout = ({ children }) => {
 export default Layout
 
 Layout.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([PropTypes.node]),
+}
+
+Layout.defaultProps = {
+  children: PropTypes.oneOfType([PropTypes.node]),
 }
