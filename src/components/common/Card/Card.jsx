@@ -11,7 +11,7 @@ const Card = ({ character }) => {
         <div className={styles.card__figure}>
           <img className={styles.card__image} src={img} alt={`${name}`} />
         </div>
-        <span className={styles.card_name}>{name}</span>
+        <h3 className={styles.card_name}>{name}</h3>
         <p className={styles.card_nickname}>{nickname}</p>
       </Link>
     </div>

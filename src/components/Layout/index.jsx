@@ -7,7 +7,9 @@ const Layout = ({ children }) => {
   return (
     <div className={styles.layout_container}>
       <Header />
-      <main className={styles.layout_main_container}>{children}</main>
+      <main data-testid="main" className={styles.layout_main_container}>
+        {children}
+      </main>
       <Footer />
     </div>
   )

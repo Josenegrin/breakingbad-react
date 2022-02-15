@@ -6,7 +6,7 @@ const HomePage = () => {
   const { t } = useTranslation('global')
 
   return (
-    <div className={styles.homePage}>
+    <div data-testid="home-page" className={styles.homePage}>
       <h1 className={styles.homePage_title}>{t('home-page.title')}</h1>
       <CardsContainer />
     </div>
