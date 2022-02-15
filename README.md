@@ -129,3 +129,6 @@ Para los testings unitarios utilice react-testing-library ya que es la herramien
 Para las correcciones de codigo y tipos use eslint y prettier para formatear la identacion de codigo.
 
 
+## Variables de entorno ⚙️
+
+Para las variables de entorno utilice el archivo .env para almacenar la url, en este caso para el despliegue, como no amerita de una key no lo configure en el github actions para que lo tomara.
